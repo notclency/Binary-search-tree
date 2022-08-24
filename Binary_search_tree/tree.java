@@ -81,11 +81,11 @@ public class tree {
             }
 
             if(focusNode == null)
-            return false;
+                return false;
         }
 
         if(focusNode.leftChild == null && focusNode.rightChild == null){
-            if(focusNode == root){
+            if(focusNode == root){ //
                 root = null;
             }else if(isItALeftChild){
                 parent.leftChild = null;
@@ -160,15 +160,16 @@ public class tree {
         myTree.addNode(45, "Intern");
         */
         myTree.addNode(50, "Boss");
-        myTree.addNode(25, "Vice Press");
-        myTree.addNode(15, "PM");
-        myTree.addNode(75, "Sales manager");
-        myTree.addNode(85, "Intern");
-        myTree.addNode(30, "Intern");
-        myTree.addNode(18, "Intern");
-        myTree.addNode(2, "Intern");
-        myTree.addNode(35, "Intern");
-        myTree.addNode(27, "Intern");
+        myTree.addNode(1, "Vice Press");
+        myTree.addNode(55, "PM");
+        //yTree.addNode(53, "name");
+        myTree.addNode(90, "Sales manager");
+        //myTree.addNode(53, "Intern");
+        //myTree.addNode(30, "Intern");
+        //myTree.addNode(18, "Intern");
+        //myTree.addNode(2, "Intern");
+        //myTree.addNode(35, "Intern");
+        //myTree.addNode(27, "Intern");
 
 
 
@@ -179,10 +180,11 @@ public class tree {
 
         //System.out.println(myTree.findNode(85));
         //myTree.remove(25);
+        //System.out.println(myTree.findNode(1).name);
         
         myTree.inOrderTravel(myTree.root);
         System.out.println("-------");
-        myTree.remove(30);
+        myTree.remove(50);
         myTree.inOrderTravel(myTree.root);
         //myTree.preOrderTravel(myTree.root);
     }
