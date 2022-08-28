@@ -1,6 +1,4 @@
-import javax.lang.model.element.Element;
-
-public class tree {
+public class BinarySearchTree {
 
     Node root;
 
@@ -143,7 +141,7 @@ public class tree {
     }
 
     public static void main(String[] args) {
-        tree myTree = new tree();
+        BinarySearchTree myTree = new BinarySearchTree();
 
         /*
         myTree.addNode(99, "Boss");
